@@ -2,7 +2,7 @@ import React from 'react'
 import Container from './Container.style'
 
 const ContainerComponent = () => (
-  <Container>Primary</Container>
+  <Container>Bem Vindo ao Easy Coffee(Container)</Container>
 )
 
 export default ContainerComponent
