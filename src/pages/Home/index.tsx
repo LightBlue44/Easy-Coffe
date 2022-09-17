@@ -5,13 +5,14 @@ import Input from '../../components/atoms/Input'
 import Paper from '../../components/atoms/Paper'
 
 const Home = () => (
-  <Container>
-    <>
+  <Container fullHeight>
+    <Paper>
       <h1>Home</h1>
-      <Button>Login</Button>
       <Input></Input>
-      <Paper></Paper>
-    </>
+      <Button>
+        Login
+      </Button>
+    </Paper>
   </Container>
 )
 

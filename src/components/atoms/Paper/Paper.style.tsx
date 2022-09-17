@@ -6,7 +6,6 @@ const Container = styled.div`
  border-radius: 5px;
  width: 200px;
  height: 150px;
- margin-left: 200px;
 `
 
 export default Container

@@ -12,7 +12,6 @@ const Button = styled.button`
  border: 2px solid #666666;
  border-radius: 5px;
  width: 70px;
- margin-left: 200px;
 `
 
 export default Button
