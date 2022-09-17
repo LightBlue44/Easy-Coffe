@@ -6,19 +6,10 @@ import {
 } from 'react-router-dom'
 import Home from './pages/Home'
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello World!</h1>
-    </div>
-  )
-}
-
 const App2 = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="inicio" element={<Home />} />
+      <Route path="/" element={<Home />} />
     </Routes>
   </BrowserRouter>
 )

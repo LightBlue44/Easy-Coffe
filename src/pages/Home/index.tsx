@@ -5,13 +5,14 @@ import Input from '../../components/atoms/Input'
 import Paper from '../../components/atoms/Paper'
 
 const Home = () => (
-  <>
-    <h1>Home</h1>
-    <Container/>
-    <Button/>
-    <Input></Input>
-    <Paper></Paper>
-  </>
+  <Container>
+    <>
+      <h1>Home</h1>
+      <Button>Login</Button>
+      <Input></Input>
+      <Paper></Paper>
+    </>
+  </Container>
 )
 
 export default Home

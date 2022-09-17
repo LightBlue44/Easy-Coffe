@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { Children } from 'react'
 import Container from './Container.style'
 
-const ContainerComponent = () => (
-  <Container>Bem Vindo ao Easy Coffee(Container)</Container>
+type ContainerComponentInterface = {
+  children?: JSX.Element
+}
+
+const ContainerComponent: React.FC<
+ContainerComponentInterface
+> = ({
+  children,
+} ) => (
+  <Container>
+    {children}
+  </Container>
 )
 
 export default ContainerComponent

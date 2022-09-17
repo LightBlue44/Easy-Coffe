@@ -1,8 +1,16 @@
 import React from 'react'
 import Button from './Button.style'
 
-const ButtonComponent = () => (
-  <Button>Primary</Button>
+interface ButtonInterface {
+  children?: JSX.Element | string
+}
+
+const ButtonComponent = ({
+  children,
+}: ButtonInterface) => (
+  <Button>
+    {children}
+  </Button>
 )
 
 export default ButtonComponent
