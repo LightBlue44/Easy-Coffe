@@ -3,12 +3,18 @@ import Button from '../../components/atoms/Button'
 import Container from '../../components/atoms/Container'
 import Input from '../../components/atoms/Input'
 import Paper from '../../components/atoms/Paper'
+import Typography from '../../components/atoms/Typography'
 
 const Home = () => (
-  <Container fullHeight>
+  <Container 
+  fullHeight
+  fullCentered>
     <Paper>
-      <h1>Home</h1>
-      <Input></Input>
+      <Typography>Bem Vindo!</Typography>
+      <Input
+        type='text'
+      />
+      <br/>
       <Button>
         Login
       </Button>

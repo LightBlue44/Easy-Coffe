@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 import Home from './pages/Home/Home.component'
 
-const App2 = () => (
+const App = () => (
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
@@ -14,4 +14,4 @@ const App2 = () => (
   </BrowserRouter>
 )
 
-export default App2
+export default App
