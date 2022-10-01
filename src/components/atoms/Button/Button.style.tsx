@@ -6,6 +6,7 @@ const Button = styled.button`
     background-color: #666666;
     border: #000000;
     border: 2px solid #000000;
+    transition: border 0.8s;
 }
  background-color: #000000;
  color: #fff;
