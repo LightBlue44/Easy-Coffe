@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { colors } from '../../../assets/styles/variables'
 
-const { veryLightBrown, lightBrown, brown1, darkBrown  } = colors
+const { lightBrown, brown1, darkBrown  } = colors
 
 const Button = styled.button`
 :hover{
