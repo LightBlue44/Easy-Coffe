@@ -23,7 +23,7 @@ const Product = () => {
 
   return (
     <>
-    <Typography>Olá {getFisrtName(state.user?.name)}</Typography>
+      <Typography>Olá {getFisrtName(state.user?.name)}</Typography>
       <Typography>Produtos</Typography>
       <Row>
         {products.map((product) => (
@@ -38,8 +38,10 @@ const Product = () => {
               </Typography>
             </Paper>
           </Col>
-     ))}
+        ))}
+      </Row>
     </>
-
+  )
+}
 
 export default Product
