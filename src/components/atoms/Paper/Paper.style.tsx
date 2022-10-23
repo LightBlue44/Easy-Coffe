@@ -1,15 +1,22 @@
-import React from 'react'
-import styled from 'styled-components'
-import { colors } from '../../../assets/styles/variables'
+import styled, {css} from 'styled-components'
 
-const { veryLightBrown } = colors
+import { colors } from '../../../assets/variables'
 
-const Container = styled.div`
- background-color: ${veryLightBrown};
- color: #000;
- border-radius: 5px;
- width: 200px;
- height: 150px;
+const { lightBrown } = colors
+
+interface PaperInterface {
+  fluid?: boolean
+}
+
+const Paper = styled.div<PaperInterface>`
+  background-color: ${lightBrown};
+  color: white;
+  border-radius: 15px;
+
+  ${({ fluid }: PaperInterface) => fluid && css`
+    width: 100%;
+    height: 100%;
+  `};
 `
 
-export default Container
+export default Paper
