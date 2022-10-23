@@ -1,0 +1,15 @@
+interface ColorsInterface{
+    darkBrown: string
+    brown1: string
+    lightBrown: string
+    veryLightBrown: string
+    white: string
+}
+
+export const colors: ColorsInterface = {
+  darkBrown: '#240f04',
+  brown1: '#964B00',
+  lightBrown: '#9f5524',
+  veryLightBrown: '#bc906a',
+  white: '#FFF'
+}
