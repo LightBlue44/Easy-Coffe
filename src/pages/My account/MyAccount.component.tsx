@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 
 import * as UserService from '../../services/Users'
-import { returnPurchase } from '../../services/Purchase'
-import { returnAllPurchase } from '../../services/Purchase'
+import { payment } from '../../services/Payment'
+import { getAllPurchase } from '../../services/Purchase'
 
 import PurchaseInterface from '../../models/interfaces/Purchase'
 
@@ -18,18 +18,12 @@ const MyAccount = () => {
     const {formatCurrency, getFisrtName} = useFormats()
     const [purchase] = useState<PurchaseInterface[]>([])
   
-    const returnPurchase = (purchase: string) => {
-        UserService.returnPurchase(purchase)
-        .then((response) =>{
-            dispatch({
-            type: 'RETURN_PURCHASE',
-            payload: response
-          })
-        })
-        .then(() => return returnPurchase)
+    const payment = (purchase: string) => {
+      UserService.(purchase)
+      .then(() => return payment 
     }
-  
-    return (
+
+      (
       <Container 
         fullHeight
         fullCentered
@@ -57,5 +51,5 @@ const MyAccount = () => {
         </Row>
       </Container>
     )
-  
+
   export default MyAccount
