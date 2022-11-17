@@ -6,9 +6,9 @@ export const reducer = (state: UserContextInterface, action: ActionTypes): UserC
   switch (action.type) {
   case 'ADD_USER':
     return {
-      ... initialValues,
       hasUser: true,
       user: action.payload,
+      cart: []
     }
 
   case 'CLEAR_USER':

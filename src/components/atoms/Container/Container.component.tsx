@@ -16,7 +16,8 @@ const ContainerComponent: React.FC<
 }) => (
   <Container 
     fullHeight={fullHeight}
-    fullCentered={fullCentered}>
+    fullCentered={fullCentered
+    }>
     {children}
   </Container>
 )
