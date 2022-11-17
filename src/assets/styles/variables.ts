@@ -1,3 +1,4 @@
+
 interface ColorsInterface {
   darkBrown: string
   brown: string
@@ -112,6 +113,7 @@ interface ZIndexInterface {
   thirdLayer: number
   fourthLayer: number
   fifthLayer: number
+
 }
 
 export const colors: ColorsInterface = {
